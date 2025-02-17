@@ -48,7 +48,6 @@ jobs:
       - name: Run media-autobuild_suite.bat
         shell: cmd
         run: |
-          cd ../mab
           cmd.exe .\media-autobuild_suite.bat
         env:
           GH_TOKEN: ${{ secrets.TOKEN_REPO }}
