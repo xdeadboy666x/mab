@@ -856,7 +856,7 @@ if [0]==[%ffmpegUpdateINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildffmpegUp=2
+    set buildffmpegUp=3
 ) else set buildffmpegUp=%ffmpegUpdateINI%
 
 if "%buildffmpegUp%"=="" GOTO ffmpegUp
@@ -886,8 +886,8 @@ if [0]==[%ffmpegChoiceINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set "buildffmpegChoice=3"
-    set "ffmpegChoice=z"
+    set "buildffmpegChoice=4"
+    set "ffmpegChoice=f"
 
 if %deleteINI%==1 echo.ffmpegChoice=^%buildffmpegChoice%>>%ini%
 set /P buildffmpegChoice="Choose ffmpeg and mpv optional libs: "
