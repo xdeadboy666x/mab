@@ -25,7 +25,7 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          path: ../mab  # Clones repo into D:\a\media-autobuild_suite\media-autobuild_suite\mab
+          path: mab  # Clones repo into D:\a\media-autobuild_suite\media-autobuild_suite\mab
 
       - name: Move to D:\a
         run: |
