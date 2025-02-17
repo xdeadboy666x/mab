@@ -39,16 +39,16 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-             ../mab/build
-             ../mab/msys64
+            ../mab/build
+            ../mab/msys64
           key: ${{ runner.os }}-mab-${{ hashFiles('mab/media-autobuild_suite.bat') }}
           restore-keys: |
-             ${{ runner.os }}-mab-
+            ${{ runner.os }}-mab-
 
       - name: Run media-autobuild_suite.bat
         shell: powershell
         run: |
           cd ../mab
-          cmd.exe media-autobuild_suite.bat
+          cmd.exe .\media-autobuild_suite.bat
         env:
           GH_TOKEN: ${{ secrets.TOKEN_REPO }}
