@@ -189,7 +189,7 @@ if [0]==[%archINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildEnv=3
+    set buildEnv=1
 ) else set buildEnv=%archINI%
 
 if "%buildEnv%"=="" GOTO selectSystem
@@ -293,7 +293,7 @@ if [0]==[%aomINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildaom=1
+    set buildaom=2
 ) else set buildaom=%aomINI%
 
 if "%buildaom%"=="" GOTO aom
@@ -315,7 +315,7 @@ if [0]==[%rav1eINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildrav1e=1
+    set buildrav1e=2
 ) else set buildrav1e=%rav1eINI%
 
 if "%buildrav1e%"=="" GOTO rav1e
@@ -337,7 +337,7 @@ if [0]==[%dav1dINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set builddav1d=1
+    set builddav1d=2
 ) else set builddav1d=%dav1dINI%
 
 if "%builddav1d%"=="" GOTO dav1d
@@ -360,7 +360,7 @@ if [0]==[%libavifINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildlibavif=1
+    set buildlibavif=2
 ) else set buildlibavif=%libavifINI%
 
 if "%buildlibavif%"=="" GOTO libavif
@@ -380,7 +380,7 @@ if [0]==[%jpegxlINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildjpegxl=1
+    set buildjpegxl=2
 ) else set buildjpegxl=%jpegxlINI%
 
 if "%buildjpegxl%"=="" GOTO jpegxl
@@ -407,7 +407,7 @@ if [0]==[%x2643INI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildx264=3
+    set buildx264=2
 ) else set buildx264=%x2643INI%
 
 if "%buildx264%"=="" GOTO x264
@@ -464,7 +464,7 @@ if [0]==[%other265INI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildother265=1
+    set buildother265=2
 ) else set buildother265=%other265INI%
 
 if "%buildother265%"=="" GOTO other265
@@ -484,7 +484,7 @@ if [0]==[%svthevcINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildsvthevc=1
+    set buildsvthevc=2
 ) else set buildsvthevc=%svthevcINI%
 
 if "%buildsvthevc%"=="" GOTO svthevc
@@ -566,7 +566,7 @@ if [0]==[%vvencINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildvvenc=1
+    set buildvvenc=2
 ) else set buildvvenc=%vvencINI%
 
 if "%buildvvenc%"=="" GOTO vvenc
@@ -586,7 +586,7 @@ if [0]==[%vvdecINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildvvdec=1
+    set buildvvdec=2
 ) else set buildvvdec=%vvdecINI%
 
 if "%buildvvdec%"=="" GOTO vvdec
@@ -609,7 +609,7 @@ if [0]==[%svtav1INI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildsvtav1=1
+    set buildsvtav1=2
 ) else set buildsvtav1=%svtav1INI%
 
 if "%buildsvtav1%"=="" GOTO svtav1
@@ -632,7 +632,7 @@ if [0]==[%svtvp9INI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildsvtvp9=1
+    set buildsvtvp9=2
 ) else set buildsvtvp9=%svtvp9INI%
 
 if "%buildsvtvp9%"=="" GOTO svtvp9
@@ -652,7 +652,7 @@ if [0]==[%flacINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildflac=1
+    set buildflac=2
 ) else set buildflac=%flacINI%
 
 if "%buildflac%"=="" GOTO flac
@@ -672,7 +672,7 @@ if [0]==[%fdkaacINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildfdkaac=1
+    set buildfdkaac=2
 ) else set buildfdkaac=%fdkaacINI%
 
 if "%buildfdkaac%"=="" GOTO fdkaac
@@ -714,7 +714,7 @@ if [0]==[%exhaleINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildexhale=1
+    set buildexhale=2
 ) else set buildexhale=%exhaleINI%
 
 if "%buildexhale%"=="" GOTO exhale
@@ -734,7 +734,7 @@ if [0]==[%mediainfoINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildmediainfo=1
+    set buildmediainfo=2
 ) else set buildmediainfo=%mediainfoINI%
 
 if "%buildmediainfo%"=="" GOTO mediainfo
@@ -754,7 +754,7 @@ if [0]==[%soxBINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildsox=1
+    set buildsox=2
 ) else set buildsox=%soxBINI%
 
 if "%buildsox%"=="" GOTO sox
@@ -798,7 +798,7 @@ if %buildffmpeg%==6 set "ffmpeg=bothstatic"
 if %buildffmpeg% GTR 6 GOTO ffmpeg
 if %deleteINI%==1 echo.ffmpegB2=^%buildffmpeg%>>%ini%
 
-set defaultFFmpegPath=https://git.ffmpeg.org/ffmpeg.git
+set defaultFFmpegPath=https://git.ffmpeg.org/ffmpeg.git#release/7.1
 
 :ffmpegPath
 if [0]==[%ffmpegPathINI%] (
@@ -856,7 +856,7 @@ if [0]==[%ffmpegUpdateINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildffmpegUp=3
+    set buildffmpegUp=2
 ) else set buildffmpegUp=%ffmpegUpdateINI%
 
 if "%buildffmpegUp%"=="" GOTO ffmpegUp
@@ -983,7 +983,7 @@ if [0]==[%rtmpdumpINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildrtmpdump=1
+    set buildrtmpdump=2
 ) else set buildrtmpdump=%rtmpdumpINI%
 
 if "%buildrtmpdump%"=="" GOTO rtmpdump
@@ -1105,7 +1105,7 @@ if [0]==[%curlINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildcurl=4
+    set buildcurl=1
 ) else set buildcurl=%curlINI%
 
 if "%buildcurl%"=="" GOTO curl
@@ -1177,7 +1177,7 @@ if [0]==[%ripgrepINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildripgrep=1
+    set buildripgrep=2
 ) else set buildripgrep=%ripgrepINI%
 
 if "%buildripgrep%"=="" GOTO ripgrep
@@ -1197,7 +1197,7 @@ if [0]==[%jqINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildjq=1
+    set buildjq=2
 ) else set buildjq=%jqINI%
 
 if "%buildjq%"=="" GOTO jq
@@ -1217,7 +1217,7 @@ if [0]==[%joINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildjo=1
+    set buildjo=2
 ) else set buildjo=%joINI%
 
 if "%buildjo%"=="" GOTO jo
@@ -1237,7 +1237,7 @@ if [0]==[%dssimINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set builddssim=1
+    set builddssim=2
 ) else set builddssim=%dssimINI%
 
 if "%builddssim%"=="" GOTO dssim
@@ -1259,7 +1259,7 @@ if [0]==[%avs2INI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildavs2=1
+    set buildavs2=2
 ) else set buildavs2=%avs2INI%
 
 if "%buildavs2%"=="" GOTO avs2
@@ -1532,7 +1532,7 @@ if [0]==[%ccacheINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set buildwithccache=1
+    set buildwithccache=2
 ) else set buildwithccache=%ccacheINI%
 
 if "%buildwithccache%"=="" GOTO ccache
