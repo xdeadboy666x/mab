@@ -97,7 +97,7 @@ SOURCE_REPO_SPIRV_CROSS=https://github.com/KhronosGroup/SPIRV-Cross.git
 SOURCE_REPO_SPIRV_HEADERS=https://github.com/KhronosGroup/SPIRV-Headers.git
 SOURCE_REPO_SPIRV_TOOLS=https://github.com/KhronosGroup/SPIRV-Tools.git
 SOURCE_REPO_SRT=https://github.com/Haivision/srt.git
-SOURCE_REPO_SVTAV1=https://gitlab.com/AOMediaCodec/SVT-AV1.git
+SOURCE_REPO_SVTAV1=https://gitlab.com/AOMediaCodec/SVT-AV1/-/tree/v2.3.0?ref_type=tags
 SOURCE_REPO_SVTHEVC=https://github.com/OpenVisualCloud/SVT-HEVC.git
 SOURCE_REPO_SVTVP9=https://github.com/OpenVisualCloud/SVT-VP9.git
 SOURCE_REPO_TESSERACT=https://github.com/tesseract-ocr/tesseract.git
