@@ -1258,7 +1258,7 @@ if [0]==[%gifskiINI%] (
     echo.
     echo -------------------------------------------------------------------------------
     echo -------------------------------------------------------------------------------
-    set /P buildgifski="Build gifski: "
+    set buildgifski=3
 ) else set buildgifski=%gifskiINI%
 
 if "%buildgifski%"=="" GOTO gifski
