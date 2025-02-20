@@ -1,14 +1,15 @@
-name: mabs-x84_64
+name: Media Autobuild Suite (Windows)
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"
+  workflow_dispatch:
   push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  x86_64:
-    name: "mingw-w64-x86_64 All"
-    runs-on: [self-hosted, windows, x64]
+  build:
+    runs-on: windows-latest
     timeout-minutes: 960
     steps:
       - uses: actions/checkout@v4
